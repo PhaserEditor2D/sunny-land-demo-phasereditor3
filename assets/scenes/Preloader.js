@@ -47,8 +47,7 @@ class Preloader extends Phaser.Scene {
 
 	create() {
 
-		// this.scene.start("TitleScreen");
-		this.scene.start("Level");
+		this.scene.start("TitleScreen");		
 	}
 
 	/* END-USER-CODE */
