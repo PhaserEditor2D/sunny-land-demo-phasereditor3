@@ -4,10 +4,10 @@
 /* START OF COMPILED CODE */
 
 class Opossum extends Phaser.GameObjects.Sprite {
-
+	
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x, y, texture || "atlas", frame !== undefined && frame !== null ? frame : "opossum/opossum-1");
-
+		
 		// this (components)
 		const thisPhysics = new Physics(this);
 		thisPhysics.bodyGravity = 500;
@@ -18,14 +18,14 @@ class Opossum extends Phaser.GameObjects.Sprite {
 		thisPhysicsBody.bodyHeight = 15;
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "opossum/opossum";
-
+		
 		/* START-USER-CTR-CODE */
 
 		this.scene.events.once("update", () => this.start());
 
 		/* END-USER-CTR-CODE */
 	}
-
+	
 	/* START-USER-CODE */
 
 	preUpdate(time, delta) {

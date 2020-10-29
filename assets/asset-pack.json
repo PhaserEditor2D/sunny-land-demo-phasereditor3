@@ -56,12 +56,13 @@
             {
                 "url": [
                     "assets/scenes/components/EventComponent.js",
-                    "assets/scenes/components/AnimationKillOnComplete.js",
                     "assets/scenes/components/Physics.js",
-                    "assets/scenes/components/ScrollFactorX.js",
+                    "assets/scenes/components/AnimationKillOnComplete.js",
                     "assets/scenes/components/StartAnimation.js",
                     "assets/scenes/components/PhysicsBody.js",
-                    "assets/scenes/components/CharacterMove.js"
+                    "assets/scenes/components/CharacterMove.js",
+                    "assets/scenes/components/FixedToCamera.js",
+                    "assets/scenes/components/ControllerButton.js"
                 ],
                 "type": "scripts",
                 "key": "EventComponent"
@@ -85,6 +86,16 @@
                 "url": "assets/sprites/instructions.png",
                 "type": "image",
                 "key": "instructions"
+            },
+            {
+                "url": "assets/buttons/jump-button.png",
+                "type": "image",
+                "key": "jump-button"
+            },
+            {
+                "url": "assets/buttons/left-button.png",
+                "type": "image",
+                "key": "left-button"
             },
             {
                 "url": "assets/scenes/Level.js",
@@ -115,6 +126,11 @@
                 "url": "assets/sprites/press-enter-text.png",
                 "type": "image",
                 "key": "press-enter-text"
+            },
+            {
+                "url": "assets/buttons/right-button.png",
+                "type": "image",
+                "key": "right-button"
             },
             {
                 "url": "assets/environment/tileset.png",

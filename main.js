@@ -18,6 +18,9 @@ window.addEventListener('load', function () {
 		},
 		render: {
 			pixelArt: true			
+		},
+		input: {
+			activePointers: 3
 		}
 	});
 	

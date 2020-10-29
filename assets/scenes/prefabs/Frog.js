@@ -4,10 +4,10 @@
 /* START OF COMPILED CODE */
 
 class Frog extends Phaser.GameObjects.Sprite {
-
+	
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x, y, texture || "atlas", frame !== undefined && frame !== null ? frame : "frog/idle/frog-idle-1");
-
+		
 		// this (components)
 		const thisPhysics = new Physics(this);
 		thisPhysics.bodyGravity = 500;
@@ -18,7 +18,7 @@ class Frog extends Phaser.GameObjects.Sprite {
 		thisPhysicsBody.bodyHeight = 11;
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "frog/idle/frog-idle";
-
+		
 		/* START-USER-CTR-CODE */
 
 		this.jumpEvent = this.scene.time.addEvent({
@@ -29,7 +29,7 @@ class Frog extends Phaser.GameObjects.Sprite {
 
 		/* END-USER-CTR-CODE */
 	}
-
+	
 	/* START-USER-CODE */
 
 	destroy(fromScene) {

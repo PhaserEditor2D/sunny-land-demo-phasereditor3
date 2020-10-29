@@ -7,22 +7,6 @@
             "properties": []
         },
         {
-            "name": "ScrollFactorX",
-            "baseClass": "EventComponent",
-            "gameObjectType": "Phaser.GameObjects.Image",
-            "properties": [
-                {
-                    "name": "scrollFactor",
-                    "label": "Scroll Factor",
-                    "tooltip": "Scroll Factor",
-                    "defValue": 0,
-                    "type": {
-                        "id": "number"
-                    }
-                }
-            ]
-        },
-        {
             "name": "Physics",
             "baseClass": "EventComponent",
             "gameObjectType": "Phaser.GameObjects.Image",
@@ -146,6 +130,18 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "FixedToCamera",
+            "baseClass": "EventComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": []
+        },
+        {
+            "name": "ControllerButton",
+            "baseClass": "EventComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": []
         }
     ],
     "meta": {

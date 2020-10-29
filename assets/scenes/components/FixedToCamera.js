@@ -3,33 +3,31 @@
 
 /* START OF COMPILED CODE */
 
-class ScrollFactorX extends EventComponent {
+class FixedToCamera extends EventComponent {
 	
 	constructor(gameObject) {
 		super(gameObject);
 		
-		gameObject["__ScrollFactorX"] = this;
+		gameObject["__FixedToCamera"] = this;
 		
 		/** @type {Phaser.GameObjects.Image} */
 		this.gameObject = gameObject;
-		/** @type {number} */
-		this.scrollFactor = 0;
 		
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 	
-	/** @returns {ScrollFactorX} */
+	/** @returns {FixedToCamera} */
 	static getComponent(gameObject) {
-		return gameObject["__ScrollFactorX"];
+		return gameObject["__FixedToCamera"];
 	}
 	
 	/* START-USER-CODE */
 
 	start() {
 
-		this.gameObject.scrollFactorX = this.scrollFactor;
+		this.gameObject.setScrollFactor(0, 0);
 	}
 
 	/* END-USER-CODE */

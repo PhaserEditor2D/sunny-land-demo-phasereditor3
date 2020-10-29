@@ -2,6 +2,8 @@
     "id": "3df0e979-baac-42ed-8869-c98af27298bb",
     "sceneType": "SCENE",
     "settings": {
+        "snapWidth": 40,
+        "snapHeight": 40,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
         "sceneKey": "Level",
@@ -396,6 +398,62 @@
             "x": 738,
             "y": 121,
             "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "8ea69e25-13f3-42a9-8536-777c09ee9d13",
+            "label": "left_button",
+            "scope": "CLASS",
+            "components": [
+                "ScrollFactorX",
+                "FixedToCamera",
+                "ControllerButton"
+            ],
+            "texture": {
+                "key": "left-button"
+            },
+            "x": 26,
+            "y": 170,
+            "scaleX": 0.39899614692006335,
+            "scaleY": 0.39899614692006335,
+            "tintTopLeft": "#fdb5b5"
+        },
+        {
+            "type": "Image",
+            "id": "072e927f-2f06-44b4-abbb-2e734eef6ccc",
+            "label": "right_button",
+            "scope": "CLASS",
+            "components": [
+                "ScrollFactorX",
+                "FixedToCamera",
+                "ControllerButton"
+            ],
+            "texture": {
+                "key": "right-button"
+            },
+            "x": 70,
+            "y": 170,
+            "scaleX": 0.39899614692006335,
+            "scaleY": 0.39899614692006335,
+            "tintTopLeft": "#fdb5b5"
+        },
+        {
+            "type": "Image",
+            "id": "87131438-7363-4eb8-9b9e-391f7cf70d4f",
+            "label": "jump_button",
+            "scope": "CLASS",
+            "components": [
+                "FixedToCamera",
+                "ControllerButton"
+            ],
+            "texture": {
+                "key": "jump-button"
+            },
+            "x": 262,
+            "y": 170,
+            "scaleX": 0.39899614692006335,
+            "scaleY": 0.39899614692006335,
+            "tintTopLeft": "#fdb5b5"
         }
     ],
     "plainObjects": [

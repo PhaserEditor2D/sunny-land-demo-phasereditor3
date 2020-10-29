@@ -38,7 +38,7 @@ class TitleScreen extends Phaser.Scene {
 		const title_screen = this.add.image(144, 90, "title-screen");
 		
 		// credits_text
-		const credits_text = this.add.image(144, 174, "credits-text");
+		this.add.image(144, 174, "credits-text");
 		
 		// press_enter_text
 		const press_enter_text = this.add.image(144, 149, "press-enter-text");
@@ -47,15 +47,6 @@ class TitleScreen extends Phaser.Scene {
 		const instructions = this.add.image(144, 0, "instructions");
 		instructions.setOrigin(0.5, 0);
 		instructions.visible = false;
-		
-		// title_screen (components)
-		new ScrollFactorX(title_screen);
-		
-		// credits_text (components)
-		new ScrollFactorX(credits_text);
-		
-		// press_enter_text (components)
-		new ScrollFactorX(press_enter_text);
 		
 		this.background = background;
 		this.middle = middle;
