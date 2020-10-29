@@ -17,9 +17,9 @@ class EventComponent {
 		this.scene.events.once("update", () => this.start());
 
 		this.scene.events.on("update", this.update, this);
-		this.gameObject.on(Phaser.GameObjects.Events.DESTROY, () => {
+		this.gameObject.on("destroy", () => {
 
-			this.scene.events.removeListener("update", this.update, this);
+			this.scene.events.off("update", this.update, this);
 		});
 
 		/* END-USER-CTR-CODE */
